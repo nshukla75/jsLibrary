@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>My Library</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <div title="yooo">hello</div>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <script src="basicLibrary.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            window.onload = function(){
+                console.log($('h3').html());
+                $('h2').hide();
+                $('h3').attr('class','helicopter');
+                console.log($('div').attr('test','testing value'));
+                console.log($('div').html());
+                $('div').on('dblclick',function(event){
+                    console.log(event);
+                })
+                $('h1').on('click', function(){
+                    alert('clicked');
+                })
+            }
+        </script>
+        <div>
+            <img src='./assets/buddha1.jpg' alt='' class='clip-circle'>
+            <img src='./assets/buddha2.jpg' alt='' class='clip-circle'>
+            <img src='./assets/buddha3.jpg' alt='' class='clip-circle'>
+            <img src='./assets/buddha4.jpg' alt='' class='clip-circle'>
+        </div>
+        <script src="library.js" charset="utf-8"></script>
+        <script src='main.js' type='module'></script>
+    </body>
+</html>
