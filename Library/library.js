@@ -3,8 +3,7 @@
         let myLibrary = {
             slideShow: _start,
             carouselItems: [],
-            slideTime: 4000,
-            $: $
+            slideTime: 4000
         }
 
         function _start(selector){
@@ -21,7 +20,7 @@
                 if(next>= _carouselItems.length){
                     next = 1;
                     _carouselItems.map(images=>{
-                        images.classList.remove('acrive');
+                        images.classList.remove('active');
                     })
                 } else {
                     _carouselItems[next].classList.add('active');
